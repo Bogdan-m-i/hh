@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="container-fluid bg-gray pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col py-4">
+                    <img class="logo" src="./img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                    <div class="col text-center">
+                        <img class="img-mail" src="./img/icon-mail.png" alt="">
+                    </div>
+                </div>
+                <form class="needs-validation" name='newMsg' novalidate>
+                    <div class="row justify-content-evenly mb-5">
+                        <div class="col-12 col-sm-5">
+                            <div class="row">
+                                <div class="col-12 mb-4 pt-5 position-relative">
+                                    <label for="name" class="form-label position-absolute top-0">Имя <span class="text-danger fs-2 lh-1">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-12 mb-4 mb-sm-0 pt-5 position-relative">
+                                    <label for="email" class="form-label position-absolute top-0">E-Mail <span class="text-danger fs-2 lh-1">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5 pt-5 position-relative">
+                            <label for="text" class="form-label position-absolute top-0">E-Mail <span class="text-danger fs-2 lh-1">*</span></label>
+                            <textarea class="form-control h-100 mb-4" id="text" rows="3" name="msg" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-5"></div>
+                        <div class="col-5 text-end"><button type="submit" class="btn btn-danger">Записать</button></div>
+                    </div>
+                </form>
+        </div>
+    </div>
+    <div class="container-fluid bg-gray-100 py-5 px-sm-2 px-md-5">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h1>Выводим комментарии</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" id="comments">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-gray">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col">
+                    <img class="logo-sm" src="./img/logo.png" alt="">
+                </div>
+                <div class="col text-end social-icons">
+
+                    <a href="#" target="_blank">
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-vk fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    
+                    <a href="#" target="_blank">
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>

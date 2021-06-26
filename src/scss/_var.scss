@@ -1,0 +1,35 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$border-radius: 4px;
+
+$red: #be393b;
+$green:   #58ad52;
+$green-100: tint-color($green, 80%);
+$green-200: tint-color($green, 60%);
+$green-300: tint-color($green, 40%);
+$green-400: tint-color($green, 20%);
+$green-500: $green;
+$green-600: shade-color($green, 20%);
+$green-700: shade-color($green, 40%);
+$green-800: shade-color($green, 60%);
+$green-900: shade-color($green, 80%);
+$myGray-100: #e9eef3;
+$myGray-500: #4b596c;
+$myGray-800: #2d3136;
+
+$input-bg: transparent;
+$input-border-color: $gray-600;
+$input-focus-bg: transparent;
+$input-color: $white;
+$input-focus-color: $white;
+$input-focus-box-shadow: none;
+$input-focus-border-color: $red-700;
+$input-padding-y: 15px;
+$form-label-color: $white;
+
+$btn-padding-y: 10px;
+$btn-padding-x: 20px;
+
+$card-border-width: 0;
